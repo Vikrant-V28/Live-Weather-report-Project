@@ -29,7 +29,6 @@ print("******************************************************************")
 
 
 # making a list so that i can print the info to a text
-
 txtlist = [temp_city,weather_desc,hmdt,wind_spd,date_time]
 
 #using open() buit-in function to write to a text file
@@ -45,4 +44,3 @@ with open("textfile.txt" , mode= 'w' ,encoding= 'utf-8') as f :
     f.write("{},{},{} \n".format("Current Humidity      :",txtlist[2],"%"))
     f.write("{},{},{} \n".format("Current wind speed    :",txtlist[3],"kmph"))
     f.write("***************************************************************")
-
