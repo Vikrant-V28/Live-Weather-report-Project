@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import requests
 #import os
 from datetime import datetime
@@ -41,6 +35,7 @@ txtlist = [temp_city,weather_desc,hmdt,wind_spd,date_time]
 #using open() buit-in function to write to a text file
 with open("textfile.txt" , mode= 'w' ,encoding= 'utf-8') as f :     
                                      #encoding = utf-8 for linux and cp1252 for win
+    
     f.write("************************************************************* \n ")   
     f.write("Weather Stats for - {}  || {}".format(location.upper(), date_time))
     f.write("\n ************************************************************ \n")
